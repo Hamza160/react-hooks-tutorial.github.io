@@ -7,7 +7,7 @@ const App = () => {
   const [data, setData] = React.useState("");
   const fetchData = async() => {
     const {data} = await axios.get(url);
-    // setData(data);
+    setData(data);
   }
 
   React.useEffect(() => {
